@@ -3,7 +3,7 @@ title:       DriveCrux
 email:       prateekbajpai444@gmail.com
 author:      drivecrux
 description: "Building a twitter bot and deploying it"
-baseurl:     "/tweetbot"
+baseurl:     ""
 url:         "http://drivecrux.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
