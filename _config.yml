@@ -23,7 +23,7 @@ bing_verification:
 animated:             true
 show_related_posts:   false
 show_post_footers:    false
-show_social_icons:    true
+show_social_icons:    false
 ajaxify_contact_form: false
 enable_mathjax: false
 extended_fonts: false
@@ -47,7 +47,7 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username: drivecrux
+github_username:
 reddit_username:
 bitbucket_username:
 stackoverflow_id:
@@ -65,7 +65,7 @@ telegram_username:
 vk_id:
 
 # Post sharing icons
-show_sharing_icons: false
+show_sharing_icons: true
 # Change to 'true' to enable individual icons
 share_facebook: true
 share_twitter: true
