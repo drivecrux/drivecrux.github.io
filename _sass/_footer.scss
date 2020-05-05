@@ -24,7 +24,11 @@ footer {
   color: $footer-color;
   font-size: $footer-font-size;
   font-weight: $footer-font-weight;
-  /*padding: $footer-padding;*/
+  padding: $footer-padding;
   text-align: center;
+}
+
+#footer a{
+  text-decoration:none;
 }
 
