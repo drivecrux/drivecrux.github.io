@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Dcrux
+title: About dCrux
 permalink: /about/
 tags: about
 ---
