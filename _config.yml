@@ -1,8 +1,8 @@
 # Site settings
-title:       DriveCrux
+title:       driveCrux
 email:       prateekbajpai444@gmail.com
 author:      drivecrux
-description: "Building a twitter bot and deploying it"
+description: "Programming projects to help you build from scratch"
 baseurl:     ""
 url:         "http://drivecrux.github.io"
 date_format: "%b %-d, %Y"
@@ -23,7 +23,7 @@ bing_verification:
 animated:             true
 show_related_posts:   false
 show_post_footers:    false
-show_social_icons:    false
+show_social_icons:    true
 ajaxify_contact_form: false
 enable_mathjax: false
 extended_fonts: false
@@ -33,7 +33,7 @@ post_preview_image: false
 
 # Facebook Page integration
 # (for instant articles and other stuff)
-fb_page: false
+fb_page: true
 fb_page_id:
 
 # Disqus post comments
@@ -42,7 +42,7 @@ disqus_shortname:
 
 # Facebook Comments plugin
 # (leave blank to disable Facebook Comments, otherwise set it to true)
-facebook_comments:
+facebook_comments: true
 facebook_appid:
 facebook_comments_number: 10
 
