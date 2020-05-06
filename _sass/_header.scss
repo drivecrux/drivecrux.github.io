@@ -12,6 +12,8 @@
 
 .site-header .site-title {
   font-size: $h2;
+  object-fit: contain;
+  font-weight: bold;
 }
 
 .site-nav {
