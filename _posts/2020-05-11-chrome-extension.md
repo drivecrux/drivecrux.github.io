@@ -40,6 +40,7 @@ $ nano manifest.json
 Next up we will add our logo for the extension. 
 > Create your own logo or simply use [this](https://raw.githubusercontent.com/drivecrux/chrome-extension/master/icon.png).
 
+
 * Add the <span class="red">.png</span> file into our extension folder and add it into our manifest file.
 ```javascript
 {
