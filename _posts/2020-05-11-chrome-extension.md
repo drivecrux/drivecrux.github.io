@@ -21,6 +21,7 @@ $ cd my-extension
 ## manifest.json:
 Every extension needs a <span class="red">manifest.json</span> file that contains all the information about the app. 
 > You could read about it [here](https://developer.chrome.com/extensions/manifest).
+
 * Create manifest.json file and add the following fields into it.
 ```javascript
 $ nano manifest.json
@@ -36,6 +37,7 @@ $ nano manifest.json
 ## Adding Logo
 Next up we will add logo for our extension. 
 > You could create your own or just use [this](https://raw.githubusercontent.com/drivecrux/chrome-extension/master/icon.png) instead.
+
 * Add the <span class="red">.png</span> file into our extension folder and add it into our manifest file.
 ```javascript
 {
@@ -74,7 +76,7 @@ setInterval(() => {
 
 ## Content Script:
 * The <span class="red">content script</span> is the file that can directly access the contents of a web page. This file will perform tasks on wherever we insert it. <br>
-* The <span class="red">post</span>matches field specifies which domains to run the content script on, in our case we want to run it on Youtube.
+* The <span class="red">matches</span> field specifies which domains to run the content script on, in our case we want to run it on Youtube.
 * We only have to add some lines in our manifest.json file:
 ```javascript
 {
@@ -94,7 +96,7 @@ setInterval(() => {
 
 ## Installing the extension:
 * Open [chrome-extensions](chrome://extensions/) on Google chrome and toggle the developer mode. 
-* Click on <span class="red">post</span>Load unpacked and navigate to the extension folder(my-extension) to select it
+* Click on <span class="red">Load unpacked</span> and navigate to the extension folder(my-extension) to select it
 * When the extension is loaded we will see the following:
 <p style="text-align:center;"><img src="https://raw.githubusercontent.com/drivecrux/chrome-extension/master/screenshot.PNG" alt="Logo"></p>
 
