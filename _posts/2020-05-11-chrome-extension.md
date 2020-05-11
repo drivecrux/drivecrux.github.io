@@ -20,7 +20,7 @@ $ cd my-extension
  
 ## manifest.json:
 Every extension needs a <span class="red">manifest.json</span> file that contains all the information about the app. 
-> You could read about it [here](https://developer.chrome.com/extensions/manifest).
+> Read more about manifest.json file [here](https://developer.chrome.com/extensions/manifest).
 
 * Create manifest.json file and add the following fields into it.
 ```javascript
@@ -35,8 +35,8 @@ $ nano manifest.json
 > <span class="red">manifest_version</span>, <span class="red">name</span> and <span class="red">version</span> fields are required, rest you could add according to your program.
 
 ## Adding Logo
-Next up we will add logo for our extension. 
-> You could create your own or just use [this](https://raw.githubusercontent.com/drivecrux/chrome-extension/master/icon.png) instead.
+Next up we will add our logo for the extension. 
+> Create your own logo or simply use [this](https://raw.githubusercontent.com/drivecrux/chrome-extension/master/icon.png).
 
 * Add the <span class="red">.png</span> file into our extension folder and add it into our manifest file.
 ```javascript
