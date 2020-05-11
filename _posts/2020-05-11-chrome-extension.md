@@ -6,10 +6,11 @@ summary: Build your own chrome extension in just 10 minutes to skip Ads on youtu
 categories: jekyll pixyll
 ---
 
-We all love to customize our browsers and extensions are just perfect for doing that. Time after time we wonder, what if there is an easier and faster way of doing something while browsing. <br>
-From finding discount codes to reading in a dark mode, there are a whole plethora of extensions that we could use. And let me tell you, they do help in increasing our productivity while browsing.
-So, let us try to build a simple chrome extension for skipping Ads on youtube. After this tutorial you can even build your own chrome extension whenver required.
+We all love to customize our browsers and extensions are just perfect for doing that. Time after time we wonder, what if there is an easier and faster way of doing something while browsing. <br/><br/>
+From finding discount codes to reading in a dark mode, there are a whole plethora of extensions that we could use. And let me tell you, they do help in increasing our productivity while browsing. <br/><br/>
+So, let us try to build a simple chrome extension for skipping Ads on youtube. After this tutorial you can optimize your browsing by creating your own chrome extension. 
 
+---
 ## Creating directory for files
 The first step is to create a folder for storing our extension files. 
 * Let us make a folder as <span class="red">my-extension</span> and move into it.
@@ -17,7 +18,7 @@ The first step is to create a folder for storing our extension files.
 $ mkdir my-extension
 $ cd my-extension
 ```
- 
+---
 ## manifest.json:
 Every extension needs a <span class="red">manifest.json</span> file that contains all the information about the app. 
 > Read more about manifest.json file [here](https://developer.chrome.com/extensions/manifest).
@@ -34,6 +35,7 @@ $ nano manifest.json
 ```
 > <span class="red">manifest_version</span>, <span class="red">name</span> and <span class="red">version</span> fields are required, rest you could add according to your program.
 
+---
 ## Adding Logo
 Next up we will add our logo for the extension. 
 > Create your own logo or simply use [this](https://raw.githubusercontent.com/drivecrux/chrome-extension/master/icon.png).
@@ -49,6 +51,7 @@ Next up we will add our logo for the extension.
 }
 ```
 
+---
 ## Skipping the Ads:
 * Now, we will create a file <span class="red">App.js</span> for defining the functions for skipping the Ads.
 ```javascript
@@ -71,11 +74,11 @@ setInterval(() => {
 }, 300);
 ```
 
-
 >"ytp-ad-skip-button-text": This is for video Ads(<span class="red">Skip Ad</span>)
 
 >"ytp-ad-overlay-close-button": This is for banner Ads(<span class="red">X</span>)
 
+---
 ## Content Script:
 * The <span class="red">content script</span> is the file that can directly access the contents of a web page. This file will perform tasks on wherever we insert it. <br>
 * The <span class="red">matches</span> field specifies which domains to run the content script on, in our case we want to run it on Youtube.
@@ -96,12 +99,14 @@ setInterval(() => {
 }
 ```
 
+---
 ## Installing the extension:
 * Open [chrome-extensions](chrome://extensions/) on Google chrome and toggle the developer mode. 
 * Click on <span class="red">Load unpacked</span> and navigate to the extension folder(my-extension) to select it
 * When the extension is loaded we will see the following:
 <p style="text-align:center;"><img src="https://raw.githubusercontent.com/drivecrux/chrome-extension/master/screenshot.PNG" alt="Logo"></p>
 
+---
 ## Testing of extension:
 * Open Youtube and disable other Youtube Adblockers, if installed. 
 * To check that our script is inserted, you could Inspect and open sources to see the script.
