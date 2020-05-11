@@ -55,7 +55,9 @@ Next up we will add logo for our extension.
 $ nano App.js
 ```
 * For skipping Ads on youtube, we just have to look for the skip button on Ads and trigger it by <span class="red">click()</span>. We could also add buttons for closing the banner Ads. 
+
 * Our App.js file will look something like this:
+
 ```javascript
 const click = (clazz) => {
   const buttons = document.getElementsByClassName(clazz);
@@ -63,12 +65,12 @@ const click = (clazz) => {
     button.click();
   }
 }
-
 setInterval(() => {
   click("ytp-ad-skip-button-text");
   click("ytp-ad-overlay-close-button");
 }, 300);
 ```
+
 
 >"ytp-ad-skip-button-text": This is for video Ads(<span class="red">Skip Ad</span>)
 
