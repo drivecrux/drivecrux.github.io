@@ -60,7 +60,6 @@ $ nano App.js
 * For skipping Ads on youtube, we just have to look for the skip button on Ads and trigger it by <span class="red">click()</span>. We could also add buttons for closing the banner Ads. 
 
 * Our App.js file will look something like this:
-
 ```javascript
 const click = (clazz) => {
   const buttons = document.getElementsByClassName(clazz);
